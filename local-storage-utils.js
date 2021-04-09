@@ -1,7 +1,7 @@
 const USER = 'USER';
 
 export function getUser() {
-    const user = localstorage.getItem(USER);
+    const user = localStorage.getItem(USER);
 
     if (!user) return {};
 
@@ -11,7 +11,7 @@ export function getUser() {
 export function setUser(user) {
     const stringyUser = JSON.stringify(user);
 
-    localStorage.setItem(USER, stringUser);
+    localStorage.setItem(USER, stringyUser);
 }
 
 export function updateUserChoice(questId, choice) {

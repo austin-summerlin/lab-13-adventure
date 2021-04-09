@@ -1,6 +1,6 @@
 import { findById } from '../utils.js';
-import { quests } from '../data.js';
-import { updateUserChoice } from '../local-storage-utils.js';
+import quests from '../data.js';
+import { getUser, updateUserChoice } from '../local-storage-utils.js';
 
 const section = document.querySelector('section');
 const params = new URLSearchParams(window.location.search);
@@ -10,21 +10,26 @@ const quest = findById(quests, questId);
 
 const image = document.createElement('img');
 const h2 = document.createElement('h2');
+const p = document.createElement('p');
 
 image.src = `../assets/quests/${quest.image}`;
 
 h2.textContent = quest.title;
+p.textContent = quest.description;
 
-const form = docment.createElement('form');
+const form = document.createElement('form');
 
 for (let choice of quest.choices) {
     const label = document.createElement('label');
+    const span = document.createElement('span');
+
+    span.textContent = choice.description;
 
     const radio = document.createElement('input');
     radio.type = 'radio';
     radio.name = 'choice';
     radio.value = choice.id;
-    label.append(choice.description, radio);
+    label.append(span, radio);
 
     form.append(label);
 }
@@ -37,13 +42,15 @@ form.append(button);
 form.addEventListener('submit', (event) => {
     event.preventDefault();
 
-    const formData = new formData(form);
+    const formData = new FormData(form);
     const choiceId = formData.get('choice');
 
     const choice = findById(quest.choices, choiceId);
     updateUserChoice(questId, choice);
 
+    alert(JSON.stringify(getUser(), true, 2));
+
     window.location = '../map';
 });
 
-section.append(h2, image, form);
+section.append(h2, image, form, p);

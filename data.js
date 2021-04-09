@@ -6,9 +6,11 @@ const gallery = {
         left: '33%',
     },
     image: 'gallery.png',
-    description: `You enter a gallery room filled with various works of art. In the center of the room is a large statue.
+    description: `
+                You enter a gallery room filled with various works of art. In the center of the room is a large statue.
                 You notice something is inside at the top of the statue. Also you notice there is a small alcove in the room and you hear
-                what sounds like someone moaning. What do you do?`,
+                what sounds like someone moaning. What do you do?
+                `,
     choices: [{
         id: 'investigatestatue',
         description: 'Investigate the statue.',
@@ -19,7 +21,8 @@ const gallery = {
     }, {
         id: 'investigatesound',
         description: 'Investigate the sound.',
-        result: `You investigate the strange sound and discover what looks like a man hunched over. Slowly the man turns his head
+        result: `
+                You investigate the strange sound and discover what looks like a man hunched over. Slowly the man turns his head
                 to look at you. You notice that his face is gaunt and covered in blood, his eyes are souless. You warn him to stay away
                 but he stands and lunges at you. The man grabs your arm and his nails dig into you, tearing at your skin. You manage to push 
                 him away but he comes back at you again.  You fire three shots from your gun, yet the man is still coming at you. You fire two
@@ -65,7 +68,7 @@ const hallway = {
     }]
 };
 
-const shotgunroom = {
+const library = {
     id: 'library',
     title: 'Library',
     map: {
@@ -101,7 +104,7 @@ const shotgunroom = {
 const quests = [
     gallery,
     hallway,
-    shotgunroom,
+    library,
 ];
 
 export default quests;
