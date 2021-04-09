@@ -1,6 +1,9 @@
 import { findById } from '../utils.js';
 import quests from '../data.js';
 import { getUser, updateUserChoice } from '../local-storage-utils.js';
+import { renderUserInfo } from '../userinfo-utils.js';
+
+const user = JSON.parse(localStorage.getItem('USER'));
 
 const section = document.querySelector('section');
 const params = new URLSearchParams(window.location.search);
@@ -13,6 +16,8 @@ const h2 = document.createElement('h2');
 const p = document.createElement('p');
 const resultsSpan = document.querySelector('#results-span');
 const backToMap = document.querySelector('#back-to-map');
+
+renderUserInfo();
 
 image.src = `../assets/quests/${quest.image}`;
 
@@ -52,10 +57,6 @@ form.addEventListener('submit', (event) => {
 
     resultsSpan.textContent = choice.result;
     user.completed[questId] = true;
-
-    alert(JSON.stringify(getUser(), true, 2));
-
-    window.location = '../map';
 });
 
 backToMap.addEventListener('click', () => {

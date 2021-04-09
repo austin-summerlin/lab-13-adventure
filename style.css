@@ -104,3 +104,16 @@ div {
     width: 1000px;
     height: 200px;
 }
+
+.enter {
+    padding-top: 200px;;
+}
+
+#user-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 100px;
+}

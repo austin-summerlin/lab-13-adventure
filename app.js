@@ -1,5 +1,4 @@
 import { setUser } from './local-storage-utils.js';
-
 const form = document.querySelector('form');
 
 form.addEventListener('submit', (event) => {
