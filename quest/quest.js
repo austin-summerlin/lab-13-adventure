@@ -11,6 +11,8 @@ const quest = findById(quests, questId);
 const image = document.createElement('img');
 const h2 = document.createElement('h2');
 const p = document.createElement('p');
+const resultsSpan = document.querySelector('#results-span');
+const backToMap = document.querySelector('#back-to-map');
 
 image.src = `../assets/quests/${quest.image}`;
 
@@ -48,9 +50,16 @@ form.addEventListener('submit', (event) => {
     const choice = findById(quest.choices, choiceId);
     updateUserChoice(questId, choice);
 
+    resultsSpan.textContent = choice.result;
+    user.completed[questId] = true;
+
     alert(JSON.stringify(getUser(), true, 2));
 
     window.location = '../map';
 });
+
+backToMap.addEventListener('click', () => {
+    window.location = '../map/index.html';
+})
 
 section.append(h2, image, form, p);

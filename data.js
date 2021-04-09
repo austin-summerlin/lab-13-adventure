@@ -26,7 +26,7 @@ const gallery = {
                 to look at you. You notice that his face is gaunt and covered in blood, his eyes are souless. You warn him to stay away
                 but he stands and lunges at you. The man grabs your arm and his nails dig into you, tearing at your skin. You manage to push 
                 him away but he comes back at you again.  You fire three shots from your gun, yet the man is still coming at you. You fire two
-                more shots and finally the man falls to the groud. Confused at what has happened you gather yourself and head to the next room.`,
+                more shots and finally the man falls to the ground. Confused at what has happened you gather yourself and head to the next room.`,
         hp: -15,
         ammo: 7,
     }, {

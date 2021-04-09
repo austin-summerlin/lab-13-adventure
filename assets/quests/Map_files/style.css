@@ -63,7 +63,7 @@ form, label, input, a, h2, span {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 5px;
+    margin: 15px;
     color: white;
 }
 
@@ -88,19 +88,4 @@ p {
     justify-content: center;
     align-items: center;
     width: 500px;
-    height: 200px;
-}
-
-image {
-    max-width: 500px;
-    max-height: 500px;
-}
-
-div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 1000px;
-    height: 200px;
 }
