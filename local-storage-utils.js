@@ -1,3 +1,5 @@
+import quests from './data.js';
+
 const USER = 'USER';
 
 export function getUser() {
@@ -24,4 +26,15 @@ export function updateUserChoice(questId, choice) {
     user.completed[questId] = true;
 
     setUser(user);
+}
+
+export function areQuestsCompleted() {
+    const user = getUser();
+
+    for (let quest of quests) {
+        if (!user.completed[quest.id]) {
+            return false;
+        }
+    }
+    return true;
 }

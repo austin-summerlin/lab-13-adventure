@@ -6,10 +6,11 @@ const gallery = {
         left: '33%',
     },
     image: 'gallery.png',
+    audio: 'zombie.wav',
     description: `
                 You enter a gallery room filled with various works of art. In the center of the room is a large statue.
-                You notice something is inside at the top of the statue. Also you notice there is a small alcove in the room and you hear
-                what sounds like someone moaning. What do you do?
+                You notice something is inside at the top of the statue. Also you notice there is a small alcove located in the 
+                back of the room and you hear what sounds like someone moaning. What do you do?
                 `,
     choices: [{
         id: 'investigatestatue',
@@ -46,6 +47,7 @@ const hallway = {
         left: '45%',
     },
     image: 'hallway.png',
+    audio: 'window.wav',
     description: `You enter a long hallway that has windows all along the right side, it is raining outside. 
                 You hear the sounds of dogs barking. You begin to walk through the hallway to the next door, 
                 when all of a sudden a Rottweiler jumps through the window.  It turns looks at you and begins to run at you.

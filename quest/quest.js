@@ -16,10 +16,12 @@ const h2 = document.createElement('h2');
 const p = document.createElement('p');
 const resultsSpan = document.querySelector('#results-span');
 const backToMap = document.querySelector('#back-to-map');
+const audio = document.getElementById('audio');
 
 renderUserInfo();
 
 image.src = `../assets/quests/${quest.image}`;
+audio.src = `../assets/quests/${quest.audio}`;
 
 h2.textContent = quest.title;
 p.textContent = quest.description;
@@ -57,6 +59,8 @@ form.addEventListener('submit', (event) => {
 
     resultsSpan.textContent = choice.result;
     user.completed[questId] = true;
+
+    audio.src = `../assets/quests/${quest.audio}`;
 });
 
 backToMap.addEventListener('click', () => {
