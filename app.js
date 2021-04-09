@@ -11,7 +11,6 @@ form.addEventListener('submit', (event) => {
     const user = {
         hp: 35,
         ammo: 12,
-        name: name,
         completed: {}
     };
 

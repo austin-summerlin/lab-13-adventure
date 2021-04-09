@@ -1,8 +1,9 @@
 import quests from '../data.js';
 import { areQuestsCompleted } from '../local-storage-utils.js';
+import { renderUserInfo } from '../userinfo-utils.js'
 
 
-// renderUserInfo();
+renderUserInfo();
 
 const user = JSON.parse(localStorage.getItem('USER'));
 
