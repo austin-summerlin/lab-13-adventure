@@ -30,12 +30,6 @@ const gallery = {
                 more shots and finally the man falls to the ground. Confused at what has happened you gather yourself and head to the next room.`,
         hp: -15,
         ammo: 7,
-    }, {
-        id: 'nextroom',
-        description: 'Head to next room.',
-        result: `Hearing the strange sounds you decide that it is best to head to the next room`,
-        hp: 0,
-        ammo: 0,
     }]
 };
 

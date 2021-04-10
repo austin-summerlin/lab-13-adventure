@@ -54,8 +54,7 @@ main {
     justify-content: center;
     align-items: center;
     font-family: Arial, Helvetica, sans-serif;
-    background: rgb(49, 49, 49);
-    color: whitesmoke;
+    color: wheat;
 }
 
 form, label, input, a, h2, span {
@@ -63,8 +62,8 @@ form, label, input, a, h2, span {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 5px;
-    color: white;
+    margin: 3px;
+    color: wheat;
 }
 
 button {
@@ -73,6 +72,7 @@ button {
     justify-content: center;
     align-items: center;
     background: red;
+    margin: 3px;
 }
 
 body {
@@ -80,7 +80,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background:rgb(49, 49, 49);
+    background: rgb(22, 22, 22);
 }
 
 p {
@@ -91,10 +91,7 @@ p {
     height: 75px;
 }
 
-image {
-    max-width: 500px;
-    max-height: 500px;
-}
+
 
 div {
     display: flex;
@@ -118,16 +115,12 @@ div {
     height: 100px;
 }
 
-.jill {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-    padding: 0;
+#results {
+    height: 150px;
+
 }
 
-#jilldescription {
-    width: 600px;
-    height: 100px;
+.saveroom {
+    width: 800px;
+    height: 600px;
 }
