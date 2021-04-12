@@ -28,13 +28,15 @@ if (areQuestsCompleted()) {
 const section = document.querySelector('section');
 
 for (let quest of quests) {
-
-    const anchorTag = document.createElement('a');
-
-    anchorTag.textContent = quest.title;
-
-    anchorTag.href = `../quest/?id=${quest.id}`;
-
-    section.append(anchorTag);
-
+    if (user.completed[quest.id]) {
+        const anchorTag = document.createElement('a');
+        anchorTag.textContent = 'completed';
+        section.append(anchorTag);
+    }
+    else {
+        const anchorTag = document.createElement('a');
+        anchorTag.textContent = quest.id;
+        anchorTag.href = `../quest/?id=${quest.id}`;
+        section.append(anchorTag);
+    }
 }

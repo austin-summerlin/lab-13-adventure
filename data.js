@@ -1,5 +1,5 @@
 const gallery = {
-    id: 'gallery',
+    id: 'Gallery',
     title: 'Gallery Room',
     map: {
         top: '25%',
@@ -34,7 +34,7 @@ const gallery = {
 };
 
 const hallway = {
-    id: 'hallway',
+    id: 'Hallway',
     title: 'East Hallway',
     map: {
         top: '35%',
@@ -65,7 +65,7 @@ const hallway = {
 };
 
 const library = {
-    id: 'library',
+    id: 'Library',
     title: 'Library',
     map: {
         top: '90%',
