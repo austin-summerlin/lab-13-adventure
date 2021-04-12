@@ -28,6 +28,7 @@ if (areQuestsCompleted()) {
 const section = document.querySelector('section');
 
 for (let quest of quests) {
+
     const anchorTag = document.createElement('a');
 
     anchorTag.textContent = quest.title;

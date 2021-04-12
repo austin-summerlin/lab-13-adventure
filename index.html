@@ -6,10 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script>
+        function alertUser(msg) {
+            alert(msg);
+        }
+    </script>
     <title>Login Page</title>
 </head>
 
-<body>
+<body
+    onload="alertUser(`Your name is Jill Valentine, you and your fellow STARS team members are investigating a series of brutal murders at The Spencer Mansion in Racoon City. You have been seperated from your partner Chris Redfield. You must head inside and see if you can find him.`)">
     <main>
         <audio autoplay>
             <source src="./assets/quests/mansion.mp3">
